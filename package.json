@@ -1,0 +1,13 @@
+{
+  "name": "DeployToS3",
+  "version": "0.0.1",
+  "description": "Lambda function triggered by CodePipeline to deploy from CodeCommit to a Static S3 Website",
+  "main": "index.js",
+  "author": "Alex Gibson",
+  "license": "ISC",
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "yauzl": "^2.5.0",
+    "mime": "^1.3.4"
+  }
+}

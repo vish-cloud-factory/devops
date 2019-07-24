@@ -1,0 +1,33 @@
+{
+  "CodePipeline.job": {
+    "id": "11111111-abcd-1111-abcd-111111abcdef",
+    "accountId": "111111111111",
+    "data": {
+      "actionConfiguration": {
+        "configuration": {
+          "FunctionName": "MyLambdaFunctionForAWSCodePipeline",
+          "UserParameters": "{ \"artifact\":\"MyApp\", \"s3StaticSiteBucket\":\"fuzzy-telegram/beta\", \"s3StaticSiteBucketRegion\":\"us-east-1\", \"sourceDirectory\": \"public/assets\"}"
+        }
+      },
+      "inputArtifacts": [
+        {
+          "location": {
+            "s3Location": {
+              "bucketName": "codepipeline-us-east-1-goeshere/Some/Directory",
+              "objectKey": "942nGBo.zip"
+            },
+            "type": "S3"
+          },
+          "revision": null,
+          "name": "MyApp"
+        }
+      ],
+      "outputArtifacts": [],
+      "artifactCredentials": {
+        "secretAccessKey": "SECRET-ACCESS-KEY",
+        "accessKeyId": "ACCESS-KEY-ID"
+      },
+      "continuationToken": "A continuation token if continuing job"
+    }
+  }
+}
